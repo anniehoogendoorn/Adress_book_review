@@ -16,7 +16,7 @@
 
     $app->get("/", function() use ($app) {
 
-        return $app['twig']->render('contacts.html.twig', array('twig_contacts' => Contact::getAll()));
+        return $app['twig']->render('contacts.html.twig', array('contacts' => Contact::getAll()));
     });
 
 
