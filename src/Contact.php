@@ -36,12 +36,12 @@
 
         function setAdress($new_adress)
         {
-            $this->phone = (string) $phone
+            $this->adres = (string) $new_adress;
         }
 
         function getAdress()
         {
-            return $this->$adress;
+            return $this->adress;
         }
 
         function save()
@@ -54,19 +54,10 @@
             return $_SESSION['list_of_contacts'];
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+        static function deleteAll()
+        {
+            $_SESSION['list_of_tasks'] = array();
+        }
 
 
     }

@@ -7,7 +7,7 @@
 <body>
     <div class='container'>
         <h1>Adress Book</h1>
-        {% if contacts is not empty %}
+        <!-- {% if contacts is not empty %}
             <p>Here are all you contacts:</p>
             <ul>
                 {% for contact in contacts %}
@@ -16,9 +16,9 @@
                         <li>{{ contact.getAdress }}</li>
                 {% endfor %
             </ul>
-        {% endif %}
+        {% endif %} -->
 
-        <form action='/create_contact' method='post'>
+        <form action="/create_contact" > 
             <div class='form-group'>
                 <label for='name'>Enter Name:</label>
                 <input id='name' name='name' class='form-control' type='text'>
